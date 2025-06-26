@@ -1,26 +1,22 @@
-# ECC-DataEncryptor
 
-This project applies **Elliptic Curve Cryptography (ECC)** in Python to protect sensitive data.  
-It includes a modular cryptographic script that performs:
-- Data encryption using ECC principles.
-- Secure file handling.
-- Future integration with data visualization.
+.# Cryptographic Data Analysis using Elliptic Curves
 
-## 📂 Project Structure
-- `ecc_core.py`: Main encryption/decryption logic using ECC.
-- `README.md`: Project description.
-- `test_data.txt`: (Optional) Example data file to encrypt.
+This project demonstrates basic cryptographic operations using **Elliptic Curve Cryptography (ECC)** with Python. It simulates secure data handling and key generation techniques over the `secp256k1` curve.
 
-## 🚀 How to Use
-1. Clone the repo.
-2. Run `ecc_core.py` in Python.
-3. Input your data, and see it encrypted securely.
+## 🔒 What It Does
+- Generates a private and public key pair using ECC
+- Applies scalar multiplication over elliptic curve points
+- Hashes text messages using SHA-256
+- Demonstrates secure data encryption foundation
 
-## 💡 Technologies Used
+## 🧠 Why This Project?
+This project reflects my academic background in mathematics and cryptography, and my passion for applying mathematical theory to real-world secure applications.
+
+## 🛠️ Technologies Used
 - Python
-- Cryptography libraries
-- (Optional) Matplotlib / Tkinter for GUI
+- Elliptic Curve Cryptography
+- SHA-256 (Hashing)
 
----
-
-Made with 💙 by Hadjer.
+## 👩‍💻 Author
+**Hadjer Meskem**  
+Mathematics graduate | Cryptography enthusiast | Building a career in data security & remote technologies.
