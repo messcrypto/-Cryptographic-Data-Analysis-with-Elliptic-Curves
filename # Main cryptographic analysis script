@@ -1,1 +1,32 @@
 .Add main script file
+.import matplotlib.pyplot as plt
+
+# إعدادات المنحنى
+a = -1
+b = 1
+
+# نقاط X
+x_vals = [x / 10.0 for x in range(-30, 31)]
+y_vals_pos = []
+y_vals_neg = []
+
+# حساب النقاط
+for x in x_vals:
+    rhs = x**3 + a*x + b
+    if rhs >= 0:
+        y = rhs**0.5
+        y_vals_pos.append(y)
+        y_vals_neg.append(-y)
+    else:
+        y_vals_pos.append(None)
+        y_vals_neg.append(None)
+
+# الرسم
+plt.plot(x_vals, y_vals_pos, label="y = √(x³ + ax + b)")
+plt.plot(x_vals, y_vals_neg, label="y = -√(x³ + ax + b)")
+plt.title("Elliptic Curve: y² = x³ + ax + b")
+plt.xlabel("x")
+plt.ylabel("y")
+plt.grid()
+plt.legend()
+plt.show()
