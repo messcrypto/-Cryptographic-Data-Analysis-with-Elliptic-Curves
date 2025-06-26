@@ -1,4 +1,4 @@
-
+9
 .# Cryptographic Data Analysis using Elliptic Curves
 
 This project demonstrates basic cryptographic operations using **Elliptic Curve Cryptography (ECC)** with Python. It simulates secure data handling and key generation techniques over the `secp256k1` curve.
@@ -51,3 +51,23 @@ This mini-project is designed to:
 Install dependencies:
 ```bash
 pip install pandas tinyec
+.# 🔐 Cryptographic Data Analysis using ECC in Python
+
+## Overview
+This project demonstrates practical cryptographic operations using **Elliptic Curve Cryptography (ECC)** in Python, including:
+- Key generation using ECC (SECP256R1)
+- Digital signatures using ECDSA
+- Secure storage of keys
+
+## Files
+- `ecc_key_generator.py`: Generates private and public keys using ECC and saves them in PEM format.
+- `ecdsa_signature.py`: Signs a message using the private key and verifies it with the public key.
+
+## Requirements
+- Python 3.x
+- `cryptography` library: Install via `pip install cryptography`
+
+## Run the Scripts
+```bash
+python ecc_key_generator.py
+python ecdsa_signature.py
